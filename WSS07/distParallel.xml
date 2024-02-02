@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite"  >
+	<test thread-count="5" name="Test" parallel="true" >
+		
+		<classes>
+			<class name="testScript.To_lunch_Mi" />
+			<class name="testScript.To_lunch_Ajio" />
+			<class name="testScript.To_lunch_Meesho" />
+			<class name="testScript.To_lunch_DemoWebshop" />
+			<class name="testScript.To_lunch_Apple" />
+		</classes>
+	</test>
+
+	<test thread-count="5" name="Test1" >
+		<classes>
+
+			<class name="testScript.To_lunch_Flipcart" />
+			<class name="testScript.To_lunch_Lakme" />
+			<class name="testScript.To_Iunch_Lorealparis" />
+			<class name="testScript.To_lunch_Maybelline" />
+			<class name="testScript.To_lunch_Motorola" />
+		</classes>
+	</test>
+
+
+</suite> 
