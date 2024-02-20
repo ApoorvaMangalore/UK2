@@ -15,11 +15,12 @@ public class Via {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		driver.get("https://in.via.com/hotels");
-		String month="Jan";
-		String date ="26";
-		
+		String month = "Jan";
+		String date = "26";
+
 		driver.findElement(By.id("checkIn")).click();
-		driver.findElement(By.xpath("//div[@id='depart-cal']//span[text()=' 2024']//span[text()='" + month + "']/../../..//div[text()='" + date+ "']")).click();
+		driver.findElement(By.xpath("//div[@id='depart-cal']//span[text()=' 2024']//span[text()='" + month
+				+ "']/../../..//div[text()='" + date + "']")).click();
 		driver.findElement(By.id("vc-close")).click();
 	}
 }
